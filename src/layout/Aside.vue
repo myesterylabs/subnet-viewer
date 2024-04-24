@@ -115,7 +115,7 @@ watch(
       </template>
       <template #title>Subnets</template>
       <a-menu-item @click="toggleCollapsed" key="detail">
-        <router-link to="/app/ecommerce/orders">
+        <router-link to="/subnets">
           All
         </router-link>
       </a-menu-item>

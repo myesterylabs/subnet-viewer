@@ -25,11 +25,12 @@ const rtl = computed(() => state.themeLayout.rtlData);
 const darkMode = computed(() => state.themeLayout.data);
 const topMenu = computed(() => state.themeLayout.topMenu);
 const innerWidth: number = window.innerWidth;
-collapsed.value = window.innerWidth <= 1200 && true;
+// collapsed.value = window.innerWidth <= 1200 && true;
+collapsed.value = false
 
 const toggleCollapsed = (e: Event) => {
   e.preventDefault();
-  collapsed.value = !collapsed.value;
+  // collapsed.value = !collapsed.value;
 };
 const handleSearchHide = (search: any) => {
   searchHide.value = !search;
@@ -54,7 +55,7 @@ const toggleCollapsedMobile = () => {
 if (innerWidth <= 990) {
   document.body.addEventListener('click', (e: any) => {
     if (!e.target.closest('.ant-layout-sider') && !e.target.closest('.navbar-brand .ant-btn')) {
-      collapsed.value = true;
+      // collapsed.value = true;
     }
   });
 }

@@ -8,7 +8,7 @@ import store from "@/vuex/store";
 const stores: any = store;
 const routes: Array<RouteRecordRaw> = [
   {
-    name: "Admin",
+    name: "App",
     path: "/",
     component: () => import("../layout/AdminLayout.vue"),
     children: [...adminRoutes],
