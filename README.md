@@ -1,18 +1,30 @@
-# Vue 3 + TypeScript + Vite
+# Subnet Viewer
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This Application helps you to visualize data from subnets created on the interplanetary File System using IPC
 
-## Recommended IDE Setup
+## Recommended Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Server Setup
+A small web-server application is meant to be setup on the computer where IPC was installed
 
-## Type Support For `.vue` Imports in TS
+This URL has setup instructionsfor the server  [IPC Server Setup](https://github.com/myesterylabs/subnet-server/releases)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+### Installation
+The application can be downloaded from the releases section of this repository [Releases](https://github.com/myesterylabs/subnet-viewer/releases)
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## How to Use
+
+#### Login
+ 
+The application requires a login to access the data from the IPC server. The login credentials are the same as the ones used to login to the IPC server
+
+See Screenshots below
+
+![Login](https://i.ibb.co/30NCrcL/Screenshot-2024-04-24-at-10-33-48.png)
+
+##### URL
+This is the url of your server
+
+##### Password
+This is the password you passed in as a flag when starting your server

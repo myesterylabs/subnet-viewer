@@ -31,7 +31,7 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach((to, next) => {
+router.beforeEach((to, _, next) => {
   if (to.meta.requiresAuth && !stores.state.auth.account) {
     // @ts-ignore
     next({ name: "login" });
