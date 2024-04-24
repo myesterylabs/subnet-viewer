@@ -19,11 +19,11 @@ const routes = [
     name: "wallets",
     component: () => import("@/views/wallets/All.vue"),
   },
-  {
-    path: "/wallets/create",
-    name: "createwallets",
-    component: () => import("@/views/wallets/Create.vue"),
-  },
+  // {
+  //   path: "/wallets/create",
+  //   name: "createwallets",
+  //   component: () => import("@/views/wallets/Create.vue"),
+  // },
   {
     path: "/wallets/import",
     name: "importwallets",
