@@ -9,7 +9,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build && electron-builder",
-    "preview": "vite preview"
+    "vite:build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "build:win": "electron-builder --win"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.1.0",
