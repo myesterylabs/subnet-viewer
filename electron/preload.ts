@@ -61,6 +61,8 @@ const api = {
     console.log("payload", payload)
     return ipcRenderer.invoke(Topics.CREATE_SUBNET, payload) as Promise<string>;
   },
+  addWallet: () => ipcRenderer.invoke(Topics.ADD_WALLET) as Promise<string>,
+  addPrivateKey: (privateKey: string) => ipcRenderer.invoke(Topics.ADD_PRIVATE_KEY, privateKey) as Promise<string>,
 };
 
 export type APIType = typeof api;

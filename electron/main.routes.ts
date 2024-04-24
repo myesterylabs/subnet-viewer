@@ -92,20 +92,28 @@ app.whenReady().then(() => {
   ipcMain.handle(
     Topics.CREATE_SUBNET,
     async (_event, payload: CreateSubnet) => {
-      console.log("creating subnet")
       let result = await repo.createSubnet(payload);
-      console.log("created subnet")
+      return result;
+    }
+  );
+  
+  ipcMain.handle(
+    Topics.ADD_WALLET,
+    async (_event) => {
+      let result = await repo.createWallet()
       return result;
     }
   );
 
-  // mportWallet("0x405f50458008edd6e2eb2efc3bf34846db1d6689b89fe1a9f9ccfe7f6e301d8d")
-  //   .then((data) => {
-  //     console.log(data);
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
+  ipcMain.handle(
+    Topics.ADD_PRIVATE_KEY,
+    async (_event, privateKey: string) => {
+      let result = await repo.importWallet(privateKey);
+      return result;
+    }
+  );
+
+
   // console.log(app.getAppPath());
   // console.log(app.getPath("userData"));
 

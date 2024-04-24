@@ -133,18 +133,18 @@ watch(
         <unicon name="wallet"></unicon>
       </template>
       <template #title>Wallet</template>
-      <a-menu-item @click="toggleCollapsed" key="detail">
-        <router-link to="/app/ecommerce/productDetails/5">
-          Product Detail
+      <a-menu-item @click="toggleCollapsed" key="allwallets">
+        <router-link to="/wallets">
+         All
         </router-link>
       </a-menu-item>
-      <a-menu-item @click="toggleCollapsed" key="edit-product">
-        <router-link to="/app/ecommerce/edit-product">
-          Product Update
+      <a-menu-item @click="toggleCollapsed" key="createwallet">
+        <router-link to="/wallets/create">
+          Create
         </router-link>
       </a-menu-item>
-      <a-menu-item @click="toggleCollapsed" key="orders">
-        <router-link to="/app/ecommerce/orders"> Orders </router-link>
+      <a-menu-item @click="toggleCollapsed" key="importwallet">
+        <router-link to="/wallets/import"> Import Wallet </router-link>
       </a-menu-item>
 
       <!-- <a-menu-item @click="toggleCollapsed" key="invoice">
