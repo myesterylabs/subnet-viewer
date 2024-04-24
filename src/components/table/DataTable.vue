@@ -4,7 +4,7 @@ import { DataTableStyleWrap } from './Style';
 import { TableWrapper } from '../../views/styled';
 import { useStore } from 'vuex';
 
-const props = defineProps({
+ defineProps({
   filterOption: Boolean,
   filterOnchange: Boolean,
   rowSelection: Boolean,

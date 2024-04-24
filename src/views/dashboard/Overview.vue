@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Main } from "../styled";
-import { defineAsyncComponent, ref, computed } from "vue";
+import { defineAsyncComponent,  computed } from "vue";
 import { DemoFourStyle } from "./style";
 import { useStore } from "vuex";
 const { state } = useStore();

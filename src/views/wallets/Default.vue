@@ -28,7 +28,7 @@ const setDefaultWallet = () => {
         alert("Wallet set successfully");
         dispatch("getDefaultWallet");
     })
-    .catch((err) => {
+    .catch((_) => {
       alert("Error adding wallet");
     });
 };

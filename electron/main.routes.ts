@@ -1,5 +1,4 @@
-import { BrowserWindow, app, ipcMain, systemPreferences } from "electron";
-import { electronApp, is, optimizer } from "@electron-toolkit/utils";
+import { BrowserWindow, app, ipcMain } from "electron";
 
 import type { CreateSubnet } from "@/types/dto/CreateSubnet";
 import { IPCRepo } from "./ipc-repo";
@@ -7,6 +6,7 @@ import Keytar from "./store/keytar";
 // import { Queries } from "../src/types/Queries";
 import { Topics } from "../src/types/Topic";
 import { createWindow } from "./main.helper";
+import { optimizer } from "@electron-toolkit/utils";
 import { store } from "./store/electron-store";
 
 require("dotenv").config();

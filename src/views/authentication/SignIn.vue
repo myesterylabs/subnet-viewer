@@ -2,7 +2,6 @@
 import { computed, reactive, ref, defineComponent, onMounted } from "vue";
 import { useStore } from "vuex";
 import { AuthWrapper } from "./style";
-import { useRouter } from "vue-router";
 // import { auth0options } from '@/config/auth0';
 import { inlineSvg } from "@/components/utilities/utilities";
 import { Topics } from "@/types/Topic";

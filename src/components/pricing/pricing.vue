@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { ListStyle } from './style';
 
-const props = defineProps({
+ defineProps({
   text: {
     type: [String, Object, Node],
     default: '',

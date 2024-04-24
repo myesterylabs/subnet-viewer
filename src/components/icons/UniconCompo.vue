@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import * as unicons from 'vue-unicons/dist/icons';
+// import * as unicons from 'vue-unicons/dist/icons';
+const unicons = require('vue-unicons/dist/icons');
 import { Icon } from './IconStyled';
 
 interface Unicon {

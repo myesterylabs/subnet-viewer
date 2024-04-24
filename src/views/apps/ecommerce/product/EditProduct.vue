@@ -27,7 +27,7 @@ const fileList = [
 
 const file = ref(null);
 const list = ref(null);
-const submitValues = ref({});
+// const submitValues = ref({});
 const formRef = ref();
 
 const fileUploadProps = {
@@ -75,23 +75,23 @@ const handleFinishFailed = (errors: any) => {
   console.log(errors);
 };
 
-const handleSubmit = (values: any) => {
-  submitValues.value = values;
-};
+// const handleSubmit = (values: any) => {
+//   submitValues.value = values;
+// };
 
-const rules = {
-  name: [
-    {
-      required: true,
-      message: 'Please input Activity name',
-      trigger: 'blur',
-    },
-  ],
-};
+// const rules = {
+//   name: [
+//     {
+//       required: true,
+//       message: 'Please input Activity name',
+//       trigger: 'blur',
+//     },
+//   ],
+// };
 
-const resetForm = () => {
-  formRef.value.ruleformState.resetFields();
-};
+// const resetForm = () => {
+//   formRef.value.ruleformState.resetFields();
+// };
 </script>
 
 <template>

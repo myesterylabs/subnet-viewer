@@ -1,4 +1,5 @@
 <script lang="ts">
+//@ts-ignore
 import svgMap from 'svgmap';
 import 'svgmap/dist/svgMap.min.css';
 import { onMounted, toRefs, defineComponent } from 'vue';

@@ -3,17 +3,15 @@ import {
   computed,
   reactive,
   ref,
-  toRefs,
   watch,
   watchEffect,
-  defineComponent,
 } from "vue";
 //import type { PropType } from 'vue';
 import { useStore } from "vuex";
 import { useRoute } from "vue-router";
 import { NavTitle } from "./style";
 
-const props = defineProps({
+ defineProps({
   toggleCollapsed: {
     type: Function,
     required: true,
@@ -85,7 +83,7 @@ watchEffect(() => {
 
 watch(
   () => state.openKeys,
-  (val, oldVal) => {
+  (_, oldVal) => {
     state.preOpenKeys = oldVal;
   }
 );
@@ -157,7 +155,7 @@ watch(
 
     <NavTitle class="ninjadash-sidebar-nav-title">FEATURES</NavTitle>
 
-    <a-sub-menu key="charts">
+    <!-- <a-sub-menu key="charts">
       <template #icon>
         <unicon name="chart-bar"></unicon>
       </template>
@@ -168,6 +166,6 @@ watch(
       <a-menu-item @click="toggleCollapsed" key="googleChart">
         <router-link to="/chart/google-chart"> Google Chart </router-link>
       </a-menu-item>
-    </a-sub-menu>
+    </a-sub-menu> -->
   </a-menu>
 </template>

@@ -2,7 +2,7 @@
 import PropTypes from 'vue-types';
 import DashboardChart from './Chartjs.vue';
 
-const props = defineProps({
+defineProps({
   height: PropTypes.number.def(479),
   labels: PropTypes.arrayOf(PropTypes.string).def([
     'Jan',

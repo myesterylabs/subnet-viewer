@@ -3,13 +3,14 @@
     :title="title"
     :visible="visible"
     :confirmLoading="confirmLoading"
-    @ok="onOk"
-    @cancel="onCancel"
+
     :type="color ? type : false"
     :width="width"
     :class="className"
     :footer="null"
   >
+  <!-- @ok="onOk"
+  @cancel="onCancel" -->
     <template #footer>
       <slot name="footer">
         <sdButton type="white" :outlined="color ? false : true" key="back" @click="onCancel"> Return </sdButton>

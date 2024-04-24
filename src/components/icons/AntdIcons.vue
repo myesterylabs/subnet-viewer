@@ -29,8 +29,8 @@ export default defineComponent({
               item.name !== 'createFromIconfontCN',
           )
           .map((icon, key) => {
-            let antdIcons: any = Icons;
-            const customTag = antdIcons[icon.name];
+            // let antdIcons: any = Icons;
+            // const customTag = antdIcons[icon.name];
             return (
               <Col xl={6} md={12} xs={24} key={key + 1}>
                 <AnIcon class="icon-single">

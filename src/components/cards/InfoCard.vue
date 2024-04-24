@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { InfoCardStyle } from "./style";
 
-const props = defineProps({
+defineProps({
   counter: {
     type: String,
     default: "21k",

@@ -1,6 +1,7 @@
+//@ts-ignore
 import propTypes from 'prop-types';
 
-const SwRocket = ({ size, color, stroke, strokeWidth }: any) => {
+const SwRocket = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.209 16.841">
       <path
@@ -10,13 +11,13 @@ const SwRocket = ({ size, color, stroke, strokeWidth }: any) => {
         transform="translate(-8.001 -7.833)"
         fill={color}
         stroke={stroke}
-        strokeWidth={strokeWidth}
+        // // strokeWidth={strokeWidth}
       />
     </svg>
   );
 };
 
-const SwShieldCheck = ({ size, color, stroke, strokeWidth }: any) => {
+const SwShieldCheck = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.867 24.504">
       <g id="surface1" transform="translate(0 0.001)">
@@ -27,15 +28,15 @@ const SwShieldCheck = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-114.677 -150.874)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
-        />
+          />
+          {/* // strokeWidth={strokeWidth} */}
         <path
           id="Path_799"
           data-name="Path 799"
           d="M20.843,6.648V6.629c-.011-.235-.018-.484-.022-.762a2.6,2.6,0,0,0-2.445-2.544A10.078,10.078,0,0,1,11.515.432L11.5.417a1.568,1.568,0,0,0-2.131,0L9.352.432A10.079,10.079,0,0,1,2.493,3.323,2.6,2.6,0,0,0,.048,5.867c0,.275-.011.524-.022.761v.044C-.03,9.546-.1,13.121,1.1,16.367a12.34,12.34,0,0,0,2.96,4.611A15.486,15.486,0,0,0,9.852,24.4a1.794,1.794,0,0,0,.237.065,1.754,1.754,0,0,0,.689,0,1.8,1.8,0,0,0,.238-.065A15.5,15.5,0,0,0,16.8,20.976a12.357,12.357,0,0,0,2.96-4.612C20.965,13.108,20.9,9.526,20.843,6.648ZM10.433,18.358a6.107,6.107,0,1,1,6.107-6.107A6.114,6.114,0,0,1,10.433,18.358Zm0,0"
           transform="translate(0 0)"
           fill={color}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
           stroke={stroke}
         />
       </g>
@@ -43,7 +44,7 @@ const SwShieldCheck = ({ size, color, stroke, strokeWidth }: any) => {
   );
 };
 
-const SwPenTool = ({ size, color, stroke, strokeWidth }: any) => {
+const SwPenTool = ({ size, color, stroke }: any) => {
   return (
     <svg id="pen" xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.073 20.073">
       <g id="Group_1005" data-name="Group 1005">
@@ -54,7 +55,7 @@ const SwPenTool = ({ size, color, stroke, strokeWidth }: any) => {
             d="M19.485,0H17.094a.588.588,0,0,0-.588.588v.588H11.693a1.754,1.754,0,0,0-3.312,0H3.568V.588A.588.588,0,0,0,2.98,0H.588A.588.588,0,0,0,0,.588V2.94a.588.588,0,0,0,.588.588H2.98a.588.588,0,0,0,.588-.588v-.6H5.983A7.672,7.672,0,0,0,2.435,8.367a1.759,1.759,0,1,0,1.174.027A6.453,6.453,0,0,1,8.475,2.568a1.749,1.749,0,0,0,3.123,0,6.453,6.453,0,0,1,4.866,5.826,1.769,1.769,0,1,0,1.174-.027A7.658,7.658,0,0,0,14.09,2.352h2.415V2.94a.588.588,0,0,0,.588.588h2.392a.588.588,0,0,0,.588-.588V.588A.588.588,0,0,0,19.485,0Z"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
         </g>
       </g>
@@ -67,7 +68,7 @@ const SwPenTool = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-153.294 -451)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
         </g>
       </g>
@@ -80,7 +81,7 @@ const SwPenTool = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-121 -131.459)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
         </g>
       </g>
@@ -93,7 +94,7 @@ const SwPenTool = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-241 -301)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
         </g>
       </g>
@@ -101,7 +102,7 @@ const SwPenTool = ({ size, color, stroke, strokeWidth }: any) => {
   );
 };
 
-const SwNotification = ({ size, color, stroke, strokeWidth }: any) => {
+const SwNotification = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 16.486 20">
       <g id="notification_1_" data-name="notification (1)" transform="translate(-44.98 0)">
@@ -112,7 +113,7 @@ const SwNotification = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-128.613 -458.34)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_818"
@@ -121,7 +122,7 @@ const SwNotification = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(0 0)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_819"
@@ -130,14 +131,14 @@ const SwNotification = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-191.708 -38.94)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
       </g>
     </svg>
   );
 };
 
-const SwUsers = ({ size, color, stroke, strokeWidth }: any) => {
+const SwUsers = ({ size, color, stroke, }: any) => {
   return (
     <svg
       id="Group_1013"
@@ -154,7 +155,7 @@ const SwUsers = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-243.789 -104.632)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_833"
@@ -163,7 +164,7 @@ const SwUsers = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-81.263 -64)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_834"
@@ -172,7 +173,7 @@ const SwUsers = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(0 -226.526)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_835"
@@ -181,14 +182,14 @@ const SwUsers = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-182.842 -246.842)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
       </g>
     </svg>
   );
 };
 
-const SwLayers = ({ size, color, stroke, strokeWidth }: any) => {
+const SwLayers = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.124 20.119">
       <g id="layers" transform="translate(0 -0.062)">
@@ -201,7 +202,7 @@ const SwLayers = ({ size, color, stroke, strokeWidth }: any) => {
               transform="translate(0 -0.062)"
               fill={color}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              // // strokeWidth={strokeWidth}
             />
           </g>
         </g>
@@ -214,7 +215,7 @@ const SwLayers = ({ size, color, stroke, strokeWidth }: any) => {
               transform="translate(0 -238.099)"
               fill={color}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              // // strokeWidth={strokeWidth}
             />
           </g>
         </g>
@@ -227,7 +228,7 @@ const SwLayers = ({ size, color, stroke, strokeWidth }: any) => {
               transform="translate(0 -318.099)"
               fill={color}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              // // strokeWidth={strokeWidth}
             />
           </g>
         </g>
@@ -236,7 +237,7 @@ const SwLayers = ({ size, color, stroke, strokeWidth }: any) => {
   );
 };
 
-const SwPicture = ({ size, color, stroke, strokeWidth }: any) => {
+const SwPicture = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.092 16.64">
       <g id="picture" transform="translate(0 -43.979)">
@@ -249,7 +250,7 @@ const SwPicture = ({ size, color, stroke, strokeWidth }: any) => {
               transform="translate(0 -43.979)"
               fill={color}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              // // strokeWidth={strokeWidth}
             />
           </g>
         </g>
@@ -262,7 +263,7 @@ const SwPicture = ({ size, color, stroke, strokeWidth }: any) => {
               transform="translate(-8.028 -162.132)"
               fill={color}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              // strokeWidth={strokeWidth}
             />
           </g>
         </g>
@@ -275,7 +276,7 @@ const SwPicture = ({ size, color, stroke, strokeWidth }: any) => {
               transform="translate(-267.369 -182.489)"
               fill={color}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              // // strokeWidth={strokeWidth}
             />
           </g>
         </g>
@@ -284,7 +285,7 @@ const SwPicture = ({ size, color, stroke, strokeWidth }: any) => {
   );
 };
 
-const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
+const SwClock = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.025 20.707">
       <g id="dashboard" transform="translate(-5.956 -5.812)">
@@ -296,7 +297,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-212.365 -373.786)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
           <path
             id="Path_975"
@@ -305,7 +306,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-197.77 -416.336)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
         </g>
         <g id="Group_1442" data-name="Group 1442" transform="translate(15.969 22.395)">
@@ -316,7 +317,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-256 -373.786)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
           <path
             id="Path_977"
@@ -325,7 +326,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-256 -416.336)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // // strokeWidth={strokeWidth}
           />
         </g>
         <path
@@ -335,7 +336,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-141.938 -233.24)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_979"
@@ -344,7 +345,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-206.863 -204.782)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_980"
@@ -353,7 +354,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-240.031 -204.781)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // strokeWidth={strokeWidth}
         />
         <path
           id="Path_981"
@@ -362,7 +363,7 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-67.925 -66.333)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // // strokeWidth={strokeWidth}
         />
         <path
           id="Path_982"
@@ -371,14 +372,14 @@ const SwClock = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-239.929 -66.334)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // strokeWidth={strokeWidth}
         />
       </g>
     </svg>
   );
 };
 
-const SwSend = ({ size, color, stroke, strokeWidth }: any) => {
+const SwSend = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.063 11.899">
       <g id="send" transform="translate(-8.011 -11.167)">
@@ -389,7 +390,7 @@ const SwSend = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(0.783)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // strokeWidth={strokeWidth}
         />
         <g id="Group_1108" data-name="Group 1108" transform="translate(8.011 12.009)" opacity="0.5">
           <path
@@ -399,7 +400,7 @@ const SwSend = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-8.011 -11.833)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // strokeWidth={strokeWidth}
           />
           <path
             id="Path_1017"
@@ -408,7 +409,7 @@ const SwSend = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-8.011 -11.127)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // strokeWidth={strokeWidth}
           />
           <path
             id="Path_1018"
@@ -417,7 +418,7 @@ const SwSend = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-8.011 -10.421)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // strokeWidth={strokeWidth}
           />
         </g>
       </g>
@@ -425,7 +426,7 @@ const SwSend = ({ size, color, stroke, strokeWidth }: any) => {
   );
 };
 
-const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
+const SwGraph = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 20.043 19.925">
       <g id="graphic" transform="translate(0 -1.5)">
@@ -436,7 +437,7 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-53.808 -304.591)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // strokeWidth={strokeWidth}
         />
         <g id="Group_1446" data-name="Group 1446" transform="translate(2.192 12.343)">
           <path
@@ -446,7 +447,7 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-56 -316.934)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // strokeWidth={strokeWidth}
           />
           <path
             id="Path_994"
@@ -455,7 +456,7 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-202.05 -278.5)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // strokeWidth={strokeWidth}
           />
         </g>
         <g id="Group_1447" data-name="Group 1447" transform="translate(8.142 8.899)">
@@ -466,7 +467,7 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-208 -275.055)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // strokeWidth={strokeWidth}
           />
           <path
             id="Path_996"
@@ -475,7 +476,7 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
             transform="translate(-354.05 -190.5)"
             fill={color}
             stroke={stroke}
-            strokeWidth={strokeWidth}
+            // strokeWidth={strokeWidth}
           />
         </g>
         <path
@@ -485,7 +486,7 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-345.908 -181.601)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // strokeWidth={strokeWidth}
         />
         <path
           id="Path_998"
@@ -494,7 +495,7 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(0 -473.701)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // strokeWidth={strokeWidth}
         />
         <path
           id="Path_999"
@@ -503,14 +504,14 @@ const SwGraph = ({ size, color, stroke, strokeWidth }: any) => {
           transform="translate(-15.374)"
           fill={color}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          // strokeWidth={strokeWidth}
         />
       </g>
     </svg>
   );
 };
 
-const SwEllipse = ({ size, color, stroke, strokeWidth }: any) => {
+const SwEllipse = ({ size, color, stroke }: any) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 10 10">
       <circle
@@ -521,7 +522,7 @@ const SwEllipse = ({ size, color, stroke, strokeWidth }: any) => {
         r="5"
         fill={color}
         stroke={stroke}
-        strokeWidth={strokeWidth}
+        // strokeWidth={strokeWidth}
       />
     </svg>
   );

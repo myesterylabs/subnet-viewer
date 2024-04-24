@@ -9,7 +9,7 @@ interface FormState {
   layout: string;
   password: string;
 }
-const { state, dispatch } = useStore();
+const { dispatch } = useStore();
 const formState: UnwrapRef<FormState> = reactive({
   layout: "vertical",
   password: "123456",

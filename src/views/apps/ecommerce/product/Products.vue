@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, defineAsyncComponent } from 'vue';
+import { ref, defineAsyncComponent } from 'vue';
 import { useRoute } from 'vue-router';
 import { useStore } from 'vuex';
 import { Main } from '../../../styled';
@@ -16,11 +16,11 @@ const pageRoutes = [
     breadcrumbName: 'Products',
   },
 ];
-const { state, dispatch } = useStore();
+const { dispatch } = useStore();
 
 const { matched } = useRoute();
 const { path } = matched[1];
-const active = ref('active');
+// const active = ref('active');
 const onSorting = (e: any) => {
   dispatch('sorting', e.target.value);
 };

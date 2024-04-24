@@ -24,23 +24,6 @@ onMounted(() => {
   inlineSvg();
 });
 
-const addParentActive = (event: any) => {
-  document.querySelectorAll(".parent").forEach((element) => {
-    element.classList.remove("active");
-  });
-
-  const hasSubMenuLeft = event.currentTarget.closest(".has-subMenu-left");
-  const megaMenu = event.currentTarget.closest(".megaMenu-wrapper");
-  if (!megaMenu) {
-    event.currentTarget.closest("ul").previousSibling.classList.add("active");
-    if (hasSubMenuLeft)
-      hasSubMenuLeft.closest("ul").previousSibling.classList.add("active");
-  } else {
-    event.currentTarget
-      .closest(".megaMenu-wrapper")
-      .previousSibling.classList.add("active");
-  }
-};
 </script>
 
 <template>

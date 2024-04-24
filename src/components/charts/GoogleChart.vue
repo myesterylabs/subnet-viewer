@@ -1,20 +1,20 @@
 <script lang="tsx">
-import { GChart } from 'vue-google-charts';
-import { defineComponent } from 'vue';
+import { GChart } from "vue-google-charts";
+import { defineComponent } from "vue";
 
 export const GoogleBasicBarChart = defineComponent({
-  name: 'GoogleBasicBarChart',
+  name: "GoogleBasicBarChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'BarChart',
+      default: "BarChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -23,11 +23,11 @@ export const GoogleBasicBarChart = defineComponent({
     data: Array,
     title: {
       type: String,
-      default: 'Chart',
+      default: "Chart",
     },
     chartArea: {
       type: String,
-      default: '50%',
+      default: "50%",
     },
   },
   setup(props) {
@@ -37,11 +37,11 @@ export const GoogleBasicBarChart = defineComponent({
       height: props.height,
       chartArea: { width: props.chartArea },
       hAxis: {
-        title: 'Total',
+        title: "Total",
         minValue: 0,
       },
       vAxis: {
-        title: 'City',
+        title: "City",
       },
     };
     return {
@@ -49,23 +49,30 @@ export const GoogleBasicBarChart = defineComponent({
     };
   },
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} rootProps={{ 'data-testid': '1' }} />;
+    return (
+      <GChart
+        type={this.type}
+        data={this.data}
+        options={this.chartOptions}
+        // rootProps={{ "data-testid": "1" }}
+      />
+    );
   },
 });
 
 export const BubbleChart = defineComponent({
-  name: 'BubbleChart',
+  name: "BubbleChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'BubbleChart',
+      default: "BubbleChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -75,7 +82,7 @@ export const BubbleChart = defineComponent({
     colors: {
       type: Array,
       default: () => {
-        ['#b0120a', '#ffab91'];
+        ["#b0120a", "#ffab91"];
       },
     },
   },
@@ -90,23 +97,25 @@ export const BubbleChart = defineComponent({
     };
   },
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} />;
+    return (
+      <GChart type={this.type} data={this.data} options={this.chartOptions} />
+    );
   },
 });
 
 export const GoogleMaterialBarChart = defineComponent({
-  name: 'GoogleMaterialBarChart',
+  name: "GoogleMaterialBarChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'ColumnChart',
+      default: "ColumnChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -115,15 +124,15 @@ export const GoogleMaterialBarChart = defineComponent({
     data: Array,
     title: {
       type: String,
-      default: 'Chart',
+      default: "Chart",
     },
     chartArea: {
       type: String,
-      default: '50%',
+      default: "50%",
     },
     subtitle: {
       type: String,
-      default: 'Subtitle',
+      default: "Subtitle",
     },
   },
   setup(props) {
@@ -146,26 +155,26 @@ export const GoogleMaterialBarChart = defineComponent({
         type={this.type}
         data={this.data}
         options={this.chartOptions}
-        rootProps={{ 'data-testid': '2' }}
-        height={this.height}
+        // rootProps={{ "data-testid": "2" }}
+        // height={this.height}
       />
     );
   },
 });
 
 export const GoogleStackedChart = defineComponent({
-  name: 'GoogleStackedChart',
+  name: "GoogleStackedChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'BarChart',
+      default: "BarChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -174,11 +183,11 @@ export const GoogleStackedChart = defineComponent({
     data: Array,
     title: {
       type: String,
-      default: 'Chart',
+      default: "Chart",
     },
     chartArea: {
       type: String,
-      default: '50%',
+      default: "50%",
     },
   },
   setup(props) {
@@ -191,11 +200,11 @@ export const GoogleStackedChart = defineComponent({
       chartArea: { width: props.chartArea },
       isStacked: true,
       hAxis: {
-        title: 'Total',
+        title: "Total",
         minValue: 0,
       },
       vAxis: {
-        title: 'City',
+        title: "City",
       },
     };
     return {
@@ -208,26 +217,26 @@ export const GoogleStackedChart = defineComponent({
         type={this.type}
         data={this.data}
         options={this.chartOptions}
-        rootProps={{ 'data-testid': '3' }}
-        height={this.height}
+        // rootProps={{ "data-testid": "3" }}
+        // height={this.height}
       />
     );
   },
 });
 
 export const GoogleCustomColorChart = defineComponent({
-  name: 'GoogleCustomColorChart',
+  name: "GoogleCustomColorChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'BarChart',
+      default: "BarChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -236,11 +245,11 @@ export const GoogleCustomColorChart = defineComponent({
     data: Array,
     title: {
       type: String,
-      default: 'Chart',
+      default: "Chart",
     },
     chartArea: {
       type: String,
-      default: '50%',
+      default: "50%",
     },
     colors: Array,
   },
@@ -252,11 +261,11 @@ export const GoogleCustomColorChart = defineComponent({
       colors: props.colors,
       chartArea: { width: props.chartArea },
       hAxis: {
-        title: 'Total',
+        title: "Total",
         minValue: 0,
       },
       vAxis: {
-        title: 'City',
+        title: "City",
       },
     };
     return {
@@ -264,23 +273,30 @@ export const GoogleCustomColorChart = defineComponent({
     };
   },
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} rootProps={{ 'data-testid': '4' }} />;
+    return (
+      <GChart
+        type={this.type}
+        data={this.data}
+        options={this.chartOptions}
+        // rootProps={{ "data-testid": "4" }}
+      />
+    );
   },
 });
 
 export const GoogleComboChart = defineComponent({
-  name: 'GoogleComboChart',
+  name: "GoogleComboChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'ComboChart',
+      default: "ComboChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -289,11 +305,11 @@ export const GoogleComboChart = defineComponent({
     data: Array,
     title: {
       type: String,
-      default: 'Chart',
+      default: "Chart",
     },
     chartArea: {
       type: String,
-      default: '50%',
+      default: "50%",
     },
     colors: Array,
   },
@@ -304,31 +320,38 @@ export const GoogleComboChart = defineComponent({
       height: props.height,
       colors: props.colors,
       chartArea: { width: props.chartArea },
-      seriesType: 'bars',
-      series: { 5: { type: 'line' } },
+      seriesType: "bars",
+      series: { 5: { type: "line" } },
     };
     return {
       chartOptions,
     };
   },
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} rootProps={{ 'data-testid': '5' }} />;
+    return (
+      <GChart
+        type={this.type}
+        data={this.data}
+        options={this.chartOptions}
+        // rootProps={{ "data-testid": "5" }}
+      />
+    );
   },
 });
 
 export const GoogleLineChart = defineComponent({
-  name: 'GoogleLineChart',
+  name: "GoogleLineChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'LineChart',
+      default: "LineChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -341,10 +364,10 @@ export const GoogleLineChart = defineComponent({
       width: props.width,
       height: props.height,
       hAxis: {
-        title: 'Time',
+        title: "Time",
       },
       vAxis: {
-        title: 'Popularity',
+        title: "Popularity",
       },
     };
     return {
@@ -352,23 +375,26 @@ export const GoogleLineChart = defineComponent({
     };
   },
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} rootProps={{ 'data-testid': '6' }} />;
+    return (
+      <GChart type={this.type} data={this.data} options={this.chartOptions} />
+      // rootProps={{ "data-testid": "6" }}
+    );
   },
 });
 
 export const GoogleMultiLineChart = defineComponent({
-  name: 'GoogleMultiLineChart',
+  name: "GoogleMultiLineChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'LineChart',
+      default: "LineChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -381,14 +407,14 @@ export const GoogleMultiLineChart = defineComponent({
       width: props.width,
       height: props.height,
       hAxis: {
-        title: 'Time',
+        title: "Time",
       },
       vAxis: {
-        title: 'Popularity',
+        title: "Popularity",
       },
       series: {
-        0: { curveType: 'function' },
-        1: { curveType: 'function' },
+        0: { curveType: "function" },
+        1: { curveType: "function" },
       },
     };
     return {
@@ -397,23 +423,30 @@ export const GoogleMultiLineChart = defineComponent({
   },
 
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} rootProps={{ 'data-testid': '7' }} />;
+    return (
+      <GChart
+        type={this.type}
+        data={this.data}
+        options={this.chartOptions}
+        // rootProps={{ "data-testid": "7" }}
+      />
+    );
   },
 });
 
 export const GoogleBasicPieChart = defineComponent({
-  name: 'GoogleBasicPieChart',
+  name: "GoogleBasicPieChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'PieChart',
+      default: "PieChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -422,11 +455,11 @@ export const GoogleBasicPieChart = defineComponent({
     data: Array,
     title: {
       type: String,
-      default: 'My Daily Activities',
+      default: "My Daily Activities",
     },
     chartArea: {
       type: String,
-      default: '50%',
+      default: "50%",
     },
   },
   setup(props) {
@@ -442,23 +475,30 @@ export const GoogleBasicPieChart = defineComponent({
   },
 
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} rootProps={{ 'data-testid': '9' }} />;
+    return (
+      <GChart
+        type={this.type}
+        data={this.data}
+        options={this.chartOptions}
+        // rootProps={{ "data-testid": "9" }}
+      />
+    );
   },
 });
 
 export const Google3dPieChart = defineComponent({
-  name: 'Google3dPieChart',
+  name: "Google3dPieChart",
   components: {
     GChart,
   },
   props: {
     type: {
       type: String as any,
-      default: 'PieChart',
+      default: "PieChart",
     },
     width: {
       type: String,
-      default: '100%',
+      default: "100%",
     },
     height: {
       type: Number,
@@ -467,11 +507,11 @@ export const Google3dPieChart = defineComponent({
     data: Array,
     title: {
       type: String,
-      default: 'My Daily Activities',
+      default: "My Daily Activities",
     },
     chartArea: {
       type: String,
-      default: '50%',
+      default: "50%",
     },
   },
   setup(props) {
@@ -488,7 +528,14 @@ export const Google3dPieChart = defineComponent({
   },
 
   render() {
-    return <GChart type={this.type} data={this.data} options={this.chartOptions} rootProps={{ 'data-testid': '9' }} />;
+    return (
+      <GChart
+        type={this.type}
+        data={this.data}
+        options={this.chartOptions}
+        // rootProps={{ "data-testid": "9" }}
+      />
+    );
   },
 });
 

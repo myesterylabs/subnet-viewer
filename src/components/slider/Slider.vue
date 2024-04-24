@@ -39,9 +39,9 @@ function handleChange(v: any) {
   nextColor.value = value.value >= mid.value ? 'rgba(0, 0, 0, .45)' : '';
   emit('onChange', v);
 }
-function onAfterChanges(v: any) {
-  emit('onAfterChange', v);
-}
+// function onAfterChanges(v: any) {
+//   emit('onAfterChange', v);
+// }
 </script>
 
 <template>

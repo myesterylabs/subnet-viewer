@@ -2,7 +2,7 @@
 import { RecordFormWrapper } from "./FormStyle";
 import { Main, BasicFormWrapper } from "../styled";
 import { useStore } from "vuex";
-import { computed, reactive, ref, onMounted } from "vue";
+import {reactive, ref } from "vue";
 
 const { state, dispatch } = useStore();
 

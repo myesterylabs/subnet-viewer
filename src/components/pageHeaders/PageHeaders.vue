@@ -53,7 +53,7 @@ export const PageHeader = defineComponent({
                   return (
                     <a-breadcrumb-item key={key}>
                       {key == 0 && <unicon name="estate"></unicon>}
-                      {key !== this.routes.length - 1 ? <a to="#">{item.breadcrumbName}</a> : item.breadcrumbName}
+                      {key !== this.routes.length - 1 ? <a href="#">{item.breadcrumbName}</a> : item.breadcrumbName}
                     </a-breadcrumb-item>
                   );
                 })}

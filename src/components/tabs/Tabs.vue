@@ -25,7 +25,7 @@ import { ref } from 'vue';
 import type { PropType } from 'vue';
 import { TabBasic, Child } from './Style';
 
-const props = defineProps({
+defineProps({
   color: String,
   tabPosition: {
     type: String,

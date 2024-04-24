@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Layout } from 'ant-design-vue';
-import { Div, SmallScreenSearch, SmallScreenAuthInfo, TopMenuSearch } from './style';
+import { Div} from './style';
 
 // import AuthInfo from '../components/utilities/auth-info/Info.vue';
 import AsideItems from './Aside.vue';
@@ -11,14 +11,11 @@ import { computed, ref } from 'vue';
 import { useStore } from 'vuex';
 //import Customizer from './overview/Customizer.vue';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Sider, Content } = Layout;
 const collapsed = ref(false);
 const hide = ref(true);
 const searchHide = ref(true);
-//const customizerAction = ref(false);
-const activeSearch = ref(false);
 
-// const store = useStore();
 const { dispatch, state } = useStore();
 
 const rtl = computed(() => state.themeLayout.rtlData);

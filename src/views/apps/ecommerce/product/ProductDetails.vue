@@ -18,15 +18,15 @@ const pageRoutes = [
 
 const { state, dispatch } = useStore();
 const product = computed(() => state.ecommerce.product);
-const isProductLoading = computed(() => state.ecommerce.isProductLoading);
+// const isProductLoading = computed(() => state.ecommerce.isProductLoading);
 const products = computed(() => product.value && state.ecommerce.products);
 const filterData = computed(() =>
   products.value.filter((value: any) => {
     return value.category === product.value[0].category;
   }),
 );
-const { params, matched }: any = useRoute();
-const { path }: any = matched;
+const { params }: any = useRoute();
+// const { path }: any = matched;
 
 onMounted(() =>
   dispatch('filterSinglePage', {

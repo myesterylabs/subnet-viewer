@@ -35,15 +35,14 @@ const { state, dispatch } = useStore();
 
 const cartData = computed(() => state.cart.data);
 const isLoading = computed(() => state.cart.loading);
-const rtl = computed(() => state.themeLayout.rtlData);
+// const rtl = computed(() => state.themeLayout.rtlData);
 
 const formState = reactive({
   coupon: '',
 });
 
 const coupon = ref(0);
-const promo = ref(0);
-let current = ref(0);
+
 
 const incrementUpdate = (id: number, quantity: any) => {
   const data = parseInt(quantity, 10) + 1;

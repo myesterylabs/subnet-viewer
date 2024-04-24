@@ -32,7 +32,7 @@ const emit = defineEmits(['onCurrentChange']);
 
 const { state, dispatch } = useStore();
 const cartData = computed(() => state.cart.data);
-const isLoading = computed(() => state.cart.loading);
+// const isLoading = computed(() => state.cart.loading);
 const rtl = computed(() => state.themeLayout.rtlData);
 const paymentValue = ref('card');
 const stateAccount = reactive({
@@ -98,7 +98,7 @@ const cartDeleted = (id: any) => {
 
 const PlaceOrder = (
   <sdButton class="btn-proceed" type="secondary" size="lg">
-    <a to="#">Place Order</a>
+    <a href="#">Place Order</a>
   </sdButton>
 );
 

@@ -9,7 +9,7 @@ import { Topics } from "./types/Topic";
 import { type Account } from "@/types/Account";
 import { useRouter } from "vue-router";
 
-const { state, dispatch, commit } = useStore();
+const { state, dispatch } = useStore();
 const mainContent = computed(() => state.themeLayout.main);
 const router = useRouter();
 const rtl = computed(() => state.themeLayout.rtlData);

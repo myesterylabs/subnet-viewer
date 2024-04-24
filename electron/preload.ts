@@ -1,7 +1,6 @@
-import type { Command, CommandResult, QueryResult } from "@/types/Command";
+import type { Command, CommandResult, } from "@/types/Command";
 import { contextBridge, ipcRenderer } from "electron";
 
-import type { Account } from "@/types/Account";
 import type { CreateSubnet } from "@/types/dto/CreateSubnet";
 import { Queries } from "../src/types/Queries";
 import { Topics } from "../src/types/Topic";

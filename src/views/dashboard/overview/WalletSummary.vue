@@ -1,5 +1,5 @@
 <script setup lang="tsx">
-import { ref, computed } from "vue";
+import {  computed } from "vue";
 import { MarketingCampaignStyle } from "./Style";
 import { BorderLessHeading, TableDefaultStyle } from "../../styled";
 import { useStore } from 'vuex';

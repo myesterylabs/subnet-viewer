@@ -5,6 +5,8 @@ import adminRoutes from "./adminRoutes";
 import authRoutes from "./authRoutes";
 import store from "@/vuex/store";
 
+//@ts-ignore
+
 const stores: any = store;
 const routes: Array<RouteRecordRaw> = [
   {
@@ -29,14 +31,17 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, next) => {
   if (to.meta.requiresAuth && !stores.state.auth.account) {
+    // @ts-ignore
     next({ name: "login" });
   }
   //  redirect logged in user from open route to dashboard
   else if (!to.meta.requiresAuth && stores.state.auth.account) {
+    // @ts-ignore
     next({ name: "dashboard" });
   } else {
+    // @ts-ignore
     next();
   }
   window.scrollTo(0, 0); // reset scroll position to top of page

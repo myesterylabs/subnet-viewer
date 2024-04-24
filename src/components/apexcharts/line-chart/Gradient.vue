@@ -39,7 +39,7 @@ const chartOptions = ref({
     ],
     tickAmount: 10,
     labels: {
-      formatter: function (value: any, timestamp: any, opts: any) {
+      formatter: function (_: any, timestamp: any, opts: any) {
         return opts.dateFormatter(new Date(timestamp), 'dd MMM');
       },
     },

@@ -16,7 +16,7 @@
 <script setup lang="ts">
 import { ColorPalette } from './style';
 
-const props = defineProps({
+defineProps({
   colorCode: {
     type: [String, Array],
     default: '',

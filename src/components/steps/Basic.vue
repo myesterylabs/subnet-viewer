@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import { message } from 'ant-design-vue';
 import { StepsStyle, ActionWrapper } from './style';
 
-const props = defineProps({
+ defineProps({
   step: {
     type: String,
     validator: (value) => ['basic', 'withIcon', 'switch', 'direction'].includes(value as string),

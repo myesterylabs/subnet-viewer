@@ -2,6 +2,7 @@
   "extends": "@vue/tsconfig/tsconfig.node.json",
   "include": [
     "vite.config.*",
+    "env.d.ts",
     "vitest.config.*",
     "cypress.config.*",
     "playwright.config.*",
@@ -38,7 +39,8 @@
     "paths": {
       "@/*": ["src/*"]
     },
-
+    "ignoreDeprecations": "5.0",
+    "allowJs": true,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

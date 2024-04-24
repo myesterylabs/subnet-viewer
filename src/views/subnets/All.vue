@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { TopToolBox } from "./Style";
 import { Main, TableWrapper } from "../styled";
-import { computed, ref } from "vue";
+import { computed } from "vue";
 import { useStore } from "vuex";
 
 const columns = [

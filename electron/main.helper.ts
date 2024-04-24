@@ -1,7 +1,6 @@
 // import { RENDERER_DIST, VITE_DEV_SERVER_URL } from "./main";
 
-import { BrowserWindow, app } from "electron";
-
+import { BrowserWindow } from "electron";
 import path from "path";
 
 let win: BrowserWindow | null;
