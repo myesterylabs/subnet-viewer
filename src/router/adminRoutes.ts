@@ -29,6 +29,11 @@ const routes = [
     name: "importwallets",
     component: () => import("@/views/wallets/Import.vue"),
   },
+  {
+    path: "/wallets/default",
+    name: "defaultwallet",
+    component: () => import("@/views/wallets/Default.vue"),
+  },
   // {
   //   name: "ecommerce",
   //   path: "/app",

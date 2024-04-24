@@ -113,6 +113,14 @@ app.whenReady().then(() => {
     }
   );
 
+  ipcMain.handle(
+    Topics.SET_DEFAULT_WALLET,
+    async (_event, address: string) => {
+      let result = await repo.setDefaultWallet(address);
+      return result;
+    }
+  );
+
 
   // console.log(app.getAppPath());
   // console.log(app.getPath("userData"));

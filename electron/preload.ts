@@ -63,6 +63,7 @@ const api = {
   },
   addWallet: () => ipcRenderer.invoke(Topics.ADD_WALLET) as Promise<string>,
   addPrivateKey: (privateKey: string) => ipcRenderer.invoke(Topics.ADD_PRIVATE_KEY, privateKey) as Promise<string>,
+  setDefaultWallet: (address: string) => ipcRenderer.invoke(Topics.SET_DEFAULT_WALLET, address) as Promise<string>,
 };
 
 export type APIType = typeof api;

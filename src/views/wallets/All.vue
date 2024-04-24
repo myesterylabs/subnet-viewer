@@ -78,7 +78,7 @@ const dataSource = computed(() =>
               :pagination="{
                 pageSize: 15,
                 showSizeChanger: true,
-                total: subnets ? subnets.length : 20,
+                total: wallets ? wallets.length : 20,
               }"
             />
           </TableWrapper>

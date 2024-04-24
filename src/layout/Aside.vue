@@ -146,6 +146,9 @@ watch(
       <a-menu-item @click="toggleCollapsed" key="importwallet">
         <router-link to="/wallets/import"> Import Wallet </router-link>
       </a-menu-item>
+      <a-menu-item @click="toggleCollapsed" key="defaultwallet">
+        <router-link to="/wallets/default"> Set Default Wallet </router-link>
+      </a-menu-item>
 
       <!-- <a-menu-item @click="toggleCollapsed" key="invoice">
         <router-link to="/app/ecommerce/invoice"> Invoice </router-link>
