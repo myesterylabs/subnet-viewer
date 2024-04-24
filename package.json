@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build && electron-builder",
-    "vite:build": "vue-tsc && vite build",
+    "build:vite": "vue-tsc && vite build",
     "preview": "vite preview",
     "build:mac": "electron-builder --mac",
     "build:linux": "electron-builder --linux",
