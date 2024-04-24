@@ -25,7 +25,7 @@ require("dotenv").config()
 export function createWindow() {
   win = new BrowserWindow({
     fullscreen: true,
-    // show: false,
+    minimizable: false,
     icon: path.join(process.env.VITE_PUBLIC as string, "electron-vite.svg"),
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),

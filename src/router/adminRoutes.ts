@@ -1,19 +1,23 @@
-
 const routes = [
   {
-    path: '',
-    name: 'dashboard',
-    component:  () => import('@/views/dashboard/Overview.vue'),
+    path: "",
+    name: "dashboard",
+    component: () => import("@/views/dashboard/Overview.vue"),
   },
   {
-    path: '/subnets',
-    name: 'subnets',
-    component:  () => import('@/views/subnets/All.vue'),
+    path: "/subnets",
+    name: "subnets",
+    component: () => import("@/views/subnets/All.vue"),
+  },
+  {
+    path: "/subnets/create",
+    name: "createsubnets",
+    component: () => import("@/views/subnets/Create.vue"),
   },
   {
     name: "ecommerce",
     path: "/app",
-    component: () => import('@/views/apps/ecommerce/Index.vue'),
+    component: () => import("@/views/apps/ecommerce/Index.vue"),
     children: [
       {
         path: "ecommerce",
@@ -74,19 +78,19 @@ const routes = [
     ],
   },
   {
-    path: '/chart',
-    name: 'charts',
-    component: () => import('@/views/charts/Index.vue'),
+    path: "/chart",
+    name: "charts",
+    component: () => import("@/views/charts/Index.vue"),
     children: [
       {
-        path: 'google-chart',
-        name: 'googleChart',
-        component: () => import('@/views/charts/GoogleCharts.vue'),
+        path: "google-chart",
+        name: "googleChart",
+        component: () => import("@/views/charts/GoogleCharts.vue"),
       },
       {
-        path: 'chart-js',
-        name: 'chart-js',
-        component: () => import('@/views/charts/ChartJs.vue'),
+        path: "chart-js",
+        name: "chart-js",
+        component: () => import("@/views/charts/ChartJs.vue"),
       },
     ],
   },

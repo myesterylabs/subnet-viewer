@@ -1,6 +1,7 @@
 import { BrowserWindow, app, ipcMain, systemPreferences } from "electron";
 import { electronApp, is, optimizer } from "@electron-toolkit/utils";
 
+import type { CreateSubnet } from "@/types/dto/CreateSubnet";
 import { IPCRepo } from "./ipc-repo";
 import Keytar from "./store/keytar";
 // import { Queries } from "../src/types/Queries";
@@ -71,13 +72,13 @@ app.whenReady().then(() => {
       mainWindow.webContents.send(`${Topics.LOGIN_FAILED}:TRUE`, { url });
     }
   });
-  
+
   ipcMain.handle(Topics.GET_WALLETS, async (_event) => {
     let wallets = await repo.getWalletBalances();
 
     return wallets;
   });
-  
+
   ipcMain.handle(Topics.GET_SUBNETS, async (_event) => {
     let subnets = await repo.listSubnets();
     return subnets;
@@ -88,29 +89,17 @@ app.whenReady().then(() => {
     return result;
   });
 
+  ipcMain.handle(
+    Topics.CREATE_SUBNET,
+    async (_event, payload: CreateSubnet) => {
+      console.log("creating subnet")
+      let result = await repo.createSubnet(payload);
+      console.log("created subnet")
+      return result;
+    }
+  );
 
-
-  // const repo = new IPCRepo("http://34.133.97.146:8818", "098790879089789");
-
-  //  repo.getWalletBalances().then((data) => { console.log(data)})
-  // ipc-cli subnet create --parent /r314159 --min-validators 3 --min-validator-stake 10 --bottomup-check-period 30 --permission-mode collateral --supply-source-kind native
-  // 0x5f5e7ef7805a2f14c48336d5dea96b88ede31455
-  // repo
-  //   .createSubnet({
-  //     parent: "/r314159",
-  //     minValidator: 4,
-  //     minValidatorStake: 10,
-  //     bottomUpCheckPeriod: 30,
-  //     wallet: "0x5f5e7ef7805a2f14c48336d5dea96b88ede31455",
-  //   })
-  //   .then((data) => {
-  //     console.log(data);
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
-  // })
-  // repo.importWallet("0x405f50458008edd6e2eb2efc3bf34846db1d6689b89fe1a9f9ccfe7f6e301d8d")
+  // mportWallet("0x405f50458008edd6e2eb2efc3bf34846db1d6689b89fe1a9f9ccfe7f6e301d8d")
   //   .then((data) => {
   //     console.log(data);
   //   })

@@ -58,7 +58,7 @@ const dataSource = computed(() =>
             <a-row :gutter="15" class="justify-content-center">
               <a-col :xxl="4" :lg="4" :xs="24">
                 <div class="table-toolbox-actions">
-                  <RouterLink to="/subnets/add">
+                  <RouterLink to="/subnets/create">
                     <sdButton size="sm" type="primary">
                        Add Subnet
                     </sdButton>

@@ -2,6 +2,7 @@ import type { Command, CommandResult, QueryResult } from "@/types/Command";
 import { contextBridge, ipcRenderer } from "electron";
 
 import type { Account } from "@/types/Account";
+import type { CreateSubnet } from "@/types/dto/CreateSubnet";
 import { Queries } from "../src/types/Queries";
 import { Topics } from "../src/types/Topic";
 
@@ -51,12 +52,15 @@ const api = {
         balance: number;
       }[]
     >,
-  getSubnets: () =>
-    ipcRenderer.invoke(Topics.GET_SUBNETS) as Promise<string[]>,
+  getSubnets: () => ipcRenderer.invoke(Topics.GET_SUBNETS) as Promise<string[]>,
   getDefaultWallet: () =>
     ipcRenderer.invoke(Topics.GET_DEFAULT_WALLET) as Promise<string>,
   login: (url: string, password: string) =>
     ipcRenderer.send(Topics.LOGIN, url, password),
+  createSubnet: (payload: CreateSubnet) => {
+    console.log("payload", payload)
+    return ipcRenderer.invoke(Topics.CREATE_SUBNET, payload) as Promise<string>;
+  },
 };
 
 export type APIType = typeof api;

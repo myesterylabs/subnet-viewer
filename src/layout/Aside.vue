@@ -120,7 +120,7 @@ watch(
         </router-link>
       </a-menu-item>
       <a-menu-item @click="toggleCollapsed" key="edit-product">
-        <router-link to="/app/ecommerce/edit-product">
+        <router-link to="/subnets/create">
           Create
         </router-link>
       </a-menu-item>
@@ -147,9 +147,9 @@ watch(
         <router-link to="/app/ecommerce/orders"> Orders </router-link>
       </a-menu-item>
 
-      <a-menu-item @click="toggleCollapsed" key="invoice">
+      <!-- <a-menu-item @click="toggleCollapsed" key="invoice">
         <router-link to="/app/ecommerce/invoice"> Invoice </router-link>
-      </a-menu-item>
+      </a-menu-item> -->
     </a-sub-menu>
 
     <NavTitle class="ninjadash-sidebar-nav-title">FEATURES</NavTitle>

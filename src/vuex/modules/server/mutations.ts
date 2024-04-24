@@ -33,7 +33,8 @@ export default {
 
   fetchDefaultWalletSuccess(state: any, data: any) {
     state.fetchingDefaultWallet = false;
-    state.defaultWallet = data;
+    // strip " and / from the address
+    state.defaultWallet = data.replace(/"/g, "").replace(/\//g, "");
   },
 
   fetchDefaultWalletErr(state: any, err: any) {
